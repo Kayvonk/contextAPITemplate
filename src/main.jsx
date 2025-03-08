@@ -5,9 +5,7 @@ import './index.css'
 import GlobalContext from './Contexts/GlobalContext/index.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  // <React.StrictMode>
     <GlobalContext>
       <App />
     </GlobalContext>
-  // </React.StrictMode>,
 )

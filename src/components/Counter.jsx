@@ -3,14 +3,14 @@ import { GlobalData } from '../Contexts/GlobalContext'
 
 const Counter = () => {
 
-const {count, setCount, handleCount} = useContext(GlobalData)
+const {count, handleCount} = useContext(GlobalData)
 
 
   return (
     <>
     <button onClick={() => {handleCount(-1)}}>Decrement</button>
     <div>Counter</div>
-    {count}
+    <div>{count}</div>
     <button onClick={() => {handleCount(1)}}>Increment</button>
     </>
   )
